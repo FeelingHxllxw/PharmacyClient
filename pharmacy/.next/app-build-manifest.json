@@ -1,0 +1,81 @@
+{
+  "pages": {
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/page.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
+    ],
+    "/menu/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/menu/page.js"
+    ],
+    "/menu/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/menu/layout.css",
+      "static/chunks/app/menu/layout.js"
+    ],
+    "/medicines/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/medicines/page.js"
+    ],
+    "/medicines/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/medicines/layout.css",
+      "static/chunks/app/medicines/layout.js"
+    ],
+    "/customers/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/customers/page.js"
+    ],
+    "/customers/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/customers/layout.css",
+      "static/chunks/app/customers/layout.js"
+    ],
+    "/sales/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/sales/page.js"
+    ],
+    "/sales/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/sales/layout.css",
+      "static/chunks/app/sales/layout.js"
+    ],
+    "/workers/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/workers/page.js"
+    ],
+    "/workers/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/workers/layout.css",
+      "static/chunks/app/workers/layout.js"
+    ],
+    "/recipes/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/recipes/page.js"
+    ],
+    "/recipes/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/recipes/layout.css",
+      "static/chunks/app/recipes/layout.js"
+    ]
+  }
+}

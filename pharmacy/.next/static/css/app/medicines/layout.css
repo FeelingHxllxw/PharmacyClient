@@ -1,0 +1,56 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./app/globals.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  padding-top: 30px;
+  grid-gap: 30px, 20px;
+  gap: 30px, 20px;
+}
+
+.card_price {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+.card_buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 20 px;
+}
+
+.card_model {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card_title {
+  margin-right: 20px;
+  max-width: 80%;
+  white-space: normal;
+}
+
+.new_title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-between;
+}
+
+.new_title_name{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
