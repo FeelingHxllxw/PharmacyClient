@@ -3,6 +3,7 @@
     "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
+      "static/css/app/page.css",
       "static/chunks/app/page.js"
     ],
     "/layout": [
@@ -11,71 +12,52 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
+    "/reg/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/reg/page.css",
+      "static/chunks/app/reg/page.js"
+    ],
     "/menu/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/menu/page.js"
     ],
-    "/menu/layout": [
+    "/sales/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/menu/layout.css",
-      "static/chunks/app/menu/layout.js"
+      "static/css/app/sales/page.css",
+      "static/chunks/app/sales/page.js"
     ],
     "/medicines/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
+      "static/css/app/medicines/page.css",
       "static/chunks/app/medicines/page.js"
-    ],
-    "/medicines/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/medicines/layout.css",
-      "static/chunks/app/medicines/layout.js"
-    ],
-    "/customers/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/customers/page.js"
-    ],
-    "/customers/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/customers/layout.css",
-      "static/chunks/app/customers/layout.js"
-    ],
-    "/sales/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/sales/page.js"
-    ],
-    "/sales/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/sales/layout.css",
-      "static/chunks/app/sales/layout.js"
-    ],
-    "/workers/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/workers/page.js"
-    ],
-    "/workers/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/workers/layout.css",
-      "static/chunks/app/workers/layout.js"
     ],
     "/recipes/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
+      "static/css/app/recipes/page.css",
       "static/chunks/app/recipes/page.js"
     ],
-    "/recipes/layout": [
+    "/customers/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/recipes/layout.css",
-      "static/chunks/app/recipes/layout.js"
+      "static/css/app/customers/page.css",
+      "static/chunks/app/customers/page.js"
+    ],
+    "/workers/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/workers/page.css",
+      "static/chunks/app/workers/page.js"
+    ],
+    "/chart/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/chart/page.css",
+      "static/chunks/app/chart/page.js"
     ]
   }
 }

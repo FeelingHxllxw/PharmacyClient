@@ -71,21 +71,25 @@ export const CreateUpdateMed = ({
       cancelText={"Отмена"}
     >
       <div className="card_model">
+        <p>Название</p>
         <Input
           value={name}
           onChange={handleNameChange}
           placeholder="Название"
         ></Input>
+        <p>Тип</p>
         <Input
           value={type}
           onChange={handleTypeChange}
           placeholder="Тип"
         ></Input>
+        <p>Категория</p>
         <Input
           value={category}
           onChange={handleCategoryChange}
           placeholder="Категория"
         ></Input>
+        <p>Цена</p>
         <Input
           value={price}
           onChange={handlePriceChange}

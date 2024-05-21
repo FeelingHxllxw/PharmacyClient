@@ -1,7 +1,7 @@
 import Button from "antd/es//button/button";
 import { CardTitle } from "./WorkerCartTitle";
 import Card from "antd/es/card/Card";
-import dayjs from 'dayjs';
+import dayjs from "dayjs";
 
 interface Props {
   workers: Worker[];
@@ -25,8 +25,11 @@ export const Workers = ({ workers, handleDelete, handleOpen }: Props) => {
           }
           bordered={false}
         >
-          <p>{worker.education}</p>
-          <p>{dayjs(worker.employment_Date).format('DD/MM/YYYY')}</p>
+          <p>Образование: {worker.education}</p>
+          <p>
+            Дата принятия на работу:{" "}
+            {dayjs(worker.employment_Date).format("DD/MM/YYYY")}
+          </p>
           <div className="card_buttons">
             <Button onClick={() => handleOpen(worker)} style={{ flex: 1 }}>
               Редактировать

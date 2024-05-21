@@ -12,8 +12,12 @@ import {
 } from "../services/meds";
 import Title from "antd/es/typography/Title";
 import { CreateUpdateMed, Mode } from "../components/CreateUpdateMed";
+import { token } from "../page";
+import { useRouter } from "next/navigation";
 
 export default function MedPage() {
+  const router = useRouter();
+  if (token == "") router.push("/");
   const defaultValues = {
     name: "",
     type: "",

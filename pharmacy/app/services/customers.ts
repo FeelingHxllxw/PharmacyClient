@@ -1,3 +1,5 @@
+import { token } from "../page";
+
 export interface CustomerRequest {
   last_name: string;
   first_name: string;
@@ -8,8 +10,22 @@ export interface CustomerRequest {
 }
 
 export const getAllCustomers = async () => {
-  const response = await fetch("https://localhost:7054/Customers");
-  return response.json();
+  try {
+    const response = await fetch("https://localhost:7054/Customers", {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error("Ошибка авторизации. Пожалуйста, авторизуйтесь.");
+    }
+
+    return response.json();
+  } catch (error) {
+    console.error(error);
+    throw error;
+  }
 };
 
 export const createCustomer = async (customerRequest: CustomerRequest) => {
@@ -17,6 +33,7 @@ export const createCustomer = async (customerRequest: CustomerRequest) => {
     method: "POST",
     headers: {
       "content-type": "application/json",
+      Authorization: `Bearer ${token}`,
     },
     body: JSON.stringify(customerRequest),
   });
@@ -30,6 +47,7 @@ export const updateCustomer = async (
     method: "PUT",
     headers: {
       "content-type": "application/json",
+      Authorization: `Bearer ${token}`,
     },
     body: JSON.stringify(customerRequest),
   });
@@ -38,5 +56,8 @@ export const updateCustomer = async (
 export const deleteCustomer = async (id: string) => {
   await fetch(`https://localhost:7054/Customers/${id}`, {
     method: "DELETE",
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
   });
 };

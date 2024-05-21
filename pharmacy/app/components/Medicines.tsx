@@ -18,7 +18,7 @@ export const Meds = ({ meds, handleDelete, handleOpen }: Props) => {
           title={<CardTitle title={med.name} price={med.price} />}
           bordered={false}
         >
-          <p>{med.category}</p>
+          <p>Категория: {med.category}</p>
           <div className="card_buttons">
             <Button onClick={() => handleOpen(med)} style={{ flex: 1 }}>
               Редактировать

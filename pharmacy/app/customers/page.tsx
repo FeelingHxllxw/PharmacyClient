@@ -12,8 +12,12 @@ import {
 } from "../services/customers";
 import Title from "antd/es/typography/Title";
 import { CreateUpdateCustomer, Mode } from "../components/CreateUpdateCustomer";
+import { token } from "../page";
+import { useRouter } from "next/navigation";
 
 export default function CustomerPage() {
+  const router = useRouter();
+  if (token == "") router.push("/");
   const defaultValues = {
     last_Name: "",
     first_Name: "",

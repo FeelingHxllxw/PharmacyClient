@@ -13,8 +13,12 @@ import {
 import Title from "antd/es/typography/Title";
 import { CreateUpdateWorker, Mode } from "../components/CreateUpdateWorker";
 import dayjs from "dayjs";
+import { token } from "../page";
+import { useRouter } from "next/navigation";
 
 export default function WorkerPage() {
+  const router = useRouter();
+  if (token == "") router.push("/");
   const defaultValues = {
     last_Name: "",
     first_Name: "",

@@ -103,16 +103,19 @@ export const CreateUpdateWorker = ({
       cancelText={"Отмена"}
     >
       <div className="card_model">
+        <p>Фамилия</p>
         <Input
           value={last_name}
           onChange={handleLastNameChange}
           placeholder="Фамилия"
         ></Input>
+        <p>Имя</p>
         <Input
           value={first_name}
           onChange={handleFirstNameChange}
           placeholder="Имя"
         ></Input>
+        <p>Отчество</p>
         <Input
           value={middle_name}
           onChange={handleMiddleNameChange}
@@ -130,6 +133,7 @@ export const CreateUpdateWorker = ({
           format={dateFormat}
           onChange={handleBirthDateChange}
         />
+        <p>Образование</p>
         <Input
           value={education}
           onChange={handleEducationChange}

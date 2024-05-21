@@ -24,8 +24,8 @@ export const Customers = ({ customers, handleDelete, handleOpen }: Props) => {
           }
           bordered={false}
         >
-          <p>{customer.phone}</p>
-          <p>{customer.city}</p>
+          <p>Телефон: {customer.phone}</p>
+          <p>Город: {customer.city}</p>
           <div className="card_buttons">
             <Button onClick={() => handleOpen(customer)} style={{ flex: 1 }}>
               Редактировать

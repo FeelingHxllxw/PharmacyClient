@@ -90,31 +90,37 @@ export const CreateUpdateCustomer = ({
       cancelText={"Отмена"}
     >
       <div className="card_model">
+        <p>Фамилия</p>
         <Input
           value={last_name}
           onChange={handleLastNameChange}
           placeholder="Фамилия"
         ></Input>
+        <p>Имя</p>
         <Input
           value={first_name}
           onChange={handleFirstNameChange}
           placeholder="Имя"
         ></Input>
+        <p>Отчество</p>
         <Input
           value={middle_name}
           onChange={handleMiddleNameChange}
           placeholder="Отчество"
         ></Input>
+        <p>Адрес</p>
         <Input
           value={addres}
           onChange={handleAddressChange}
           placeholder="Адрес"
         ></Input>
+        <p>Город</p>
         <Input
           value={city}
           onChange={handleCityChange}
           placeholder="Город"
         ></Input>
+        <p>Телефон</p>
         <Input
           value={phone}
           onChange={handlePhoneChange}
